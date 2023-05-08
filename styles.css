@@ -237,6 +237,18 @@ button:active {
     color: black;
     padding: 0 20px;
     box-sizing: border-box;
+    font-size: 16px;
+}
+@media (min-width: 1024px) {
+    .footer-text {
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) {
+    .footer-text {
+        font-size: 19px;
+    }
+
 }
 
 .hint-container {
