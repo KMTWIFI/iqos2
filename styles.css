@@ -324,15 +324,15 @@ form table td:nth-child(odd) {
   height: 100%;
   overflow: auto;
   /*background-color: #f9fafc;*/
+  display: none; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
 }
 
 .modal-content {
-  position: absolute;
-  top: 99px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* Remove position, top, left, and transform properties */
   background-color: #f9fafc;
-  padding: 20px 20px 20px 20px; /* Updated padding */
+  padding: 20px 20px 20px 20px;
   border: 1px solid #888;
   text-align: center;
   border-radius: 9px;
@@ -358,6 +358,7 @@ form table td:nth-child(odd) {
     width: 50%;
   }
 }
+
 
 
 .close {
