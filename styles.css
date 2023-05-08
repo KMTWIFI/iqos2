@@ -335,12 +335,13 @@ form table td:nth-child(odd) {
   padding: 20px 20px 20px 20px; /* Updated padding */
   border: 1px solid #888;
   text-align: center;
+  border-radius: 9px;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
   .modal-content {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -364,8 +365,8 @@ form table td:nth-child(odd) {
   float: none;
   font-size: 50px;
   font-weight: bold;
-  margin-top: -25px;
-line-height: 50px;
+margin-top: -25px;
+    line-height: 50px;
 }
 
 .close:hover,
@@ -394,6 +395,7 @@ line-height: 50px;
     color: white;
     border: none;
     padding: 10px;
+    margin-top: 25px;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
     
