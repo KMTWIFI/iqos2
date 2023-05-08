@@ -1,4 +1,4 @@
-/* styles.css */
+/* General styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -29,6 +29,11 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.icon-image {
+    max-width: 100px; /* Adjust the width as needed */
+    margin: 20px 0; /* Adjust the margin as needed */
 }
 
 /* Slide 2 */
@@ -90,8 +95,9 @@ html, body {
     padding: 0px 50px;
     font-size: 22px;
     margin-bottom: 33px;
-    margin-top: 250px;
+    margin-top: 50px;
 }
+
 .welcome-text {
     text-align: center;
     font-size: 22px;
@@ -126,6 +132,8 @@ html, body {
     width: 100%;
     max-width: 700px;
     padding-top: 150px;
+}
+
 }
 @media (min-width: 768px) {
     .video-container {
@@ -188,10 +196,15 @@ label, input, button {
     display: inline-block;
 }
 
-input[type="text"], input[type="tel"] {
+input[type="text"], input[type="tel"], select {
     width: 100%;
     max-width: 300px;
     border: 1px solid #ccc;
+}
+
+select {
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .input-wrapper {
@@ -200,6 +213,7 @@ input[type="text"], input[type="tel"] {
     align-items: center;
     flex-direction: row;
     width: 100%;
+    direction: rtl;
 }
 
 label {
@@ -232,6 +246,27 @@ button:hover {
 button:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+/* Styles for the hidden table */
+form table {
+    display: table;
+    width: 100%;
+    max-width: 400px;
+    direction: rtl;
+}
+
+form table tr {
+    display: table-row;
+}
+
+form table td {
+    display: table-cell;
+    padding: 5px;
+}
+
+form table td:nth-child(odd) {
+    text-align: right;
 }
 
 .swiper-container::-webkit-scrollbar {
@@ -272,11 +307,6 @@ button:active {
     font-size: 16px;
 }
 
-.icon-image {
-    max-width: 100px; /* Adjust the width as needed */
-    margin: 20px 0; /* Adjust the margin as needed */
-}
-
 .button-icon {
     height: 25px;
     width: auto;
@@ -284,3 +314,100 @@ button:active {
     vertical-align: middle;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: #f9fafc;*/
+}
+
+.modal-content {
+  position: absolute;
+  top: 99px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9fafc;
+  padding: 20px 20px 20px 20px; /* Updated padding */
+  border: 1px solid #888;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .modal-content {
+    width: 70%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .modal-content {
+    width: 50%;
+  }
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: none
+  font-size: 50px;
+  font-weight: bold;
+margin-top: -25px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.date-dropdowns {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    direction: rtl;
+}
+
+.submit-button{
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    min-width: 150px;
+    font-family: 'Cairo', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+    
+}
+
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
