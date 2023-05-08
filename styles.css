@@ -125,7 +125,7 @@ html, body {
 .video-container {
     width: 100%;
     max-width: 700px;
-    padding-top: 20px;
+    padding-top: 150px;
 }
 
 video {
