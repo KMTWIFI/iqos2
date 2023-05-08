@@ -361,7 +361,7 @@ form table td:nth-child(odd) {
 
 .close {
   color: #aaaaaa;
-  float: none
+  float: none;
   font-size: 50px;
   font-weight: bold;
 margin-top: -25px;
