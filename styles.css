@@ -364,7 +364,8 @@ form table td:nth-child(odd) {
   float: none;
   font-size: 50px;
   font-weight: bold;
-margin-top: -25px;
+  margin-top: -25px;
+line-height: 50px;
 }
 
 .close:hover,
