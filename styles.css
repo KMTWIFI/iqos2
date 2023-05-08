@@ -127,6 +127,16 @@ html, body {
     max-width: 700px;
     padding-top: 150px;
 }
+@media (min-width: 768px) {
+    .video-container {
+        max-width: 500px;
+    }
+}
+@media (min-width: 1024px) {
+    .video-container {
+        max-width: 500px;
+    }
+}
 
 video {
     width: 100%;
