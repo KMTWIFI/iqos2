@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+    <title>Responsive Slider</title>
+</head>
+<body>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide slide1">
+    <div class="welcome-container">
+            <div class="rounded-box">
+                 مرحباً
+            </div>
+            <img class="icon-image" src="media/0.png" alt="Icon">
+            <p class="welcome-text">
+                <strong>لإستخدام الإنترنت المجاني</strong><br>
+                يرجى الإجابة على السؤال التالي
+            </p>
+
+            </div>
+            <div class="buttons-container">
+                <button id="button1">أكبر من 21 سنة و مدخن</button>
+                <button id="button2">أصغر من 21 سنة</button>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide slide2">
+            <div class="slide2-content">
+                <div class="video-container">
+                    <!-- Add your video source here -->
+                    <video id="my-video" src="media/1.mp4" controls autoplay muted playsinline></video>
+                        <div class="hint-container">
+                            <span id="hint-message"></span>
+                        </div>
+                </div>
+                <div class="question-container">
+                    <p class="question">هل ترغب فى التواصل مع أحد من فريق IQOS ؟</p>
+                    <div class="question-buttons">
+                        <button id="yesBtn" disabled><span><img src="media/00.png" alt="Correct icon" class="button-icon" /></span>نعم</button>
+                        <button id="noBtn" disabled><span><img src="media/000.png" alt="Wrong icon" class="button-icon" /></span>لا</button>
+                    </div>
+                </div>
+
+                <div class="rounded-box2" style="display: none;">
+                     ادخل بياناتك
+                </div>
+                <div class="form-container" style="display: none;">
+                    <div class="form-container" style="display: none;">
+                        <form>
+                            <div class="input-wrapper">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">الاسم:</label>
+                                
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">رقم الهاتف:</label>
+                                
+                            </div>
+                            <button type="submit">ارسال</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+                <div class="footer-text">
+                    <span dir="rtl">هذا المنتج غير خالٍ من الضرر و يحتوى على النيكوتين،</span><br>
+                    <span dir="rtl">الذى يسبب الإدمان. لاستعمال البالغين فقط.</span>
+                </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
