@@ -53,28 +53,64 @@
                     </div>
                 </div>
 
-                <div class="rounded-box2" style="display: none;">
-                     ادخل بياناتك
-                </div>
-                <div class="form-container" style="display: none;">
-                    <div class="form-container" style="display: none;">
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="rounded-box2">
+                      ادخل بياناتك
+                    </div>
+                    <div class="form-container">
                         <form>
-                            <div class="input-wrapper">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">الاسم:</label>
-                                
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="tel" id="phone" name="phone" required>
-                                <label for="phone">رقم الهاتف:</label>
-                                
-                            </div>
-                            <button type="submit">ارسال</button>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="name">الاسم:</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="name" name="name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="phone">رقم الهاتف:</label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="day">التاريخ:</label>
+                                    </td>
+                                    <td>
+                                        <div class="date-dropdowns">
+                                            <select id="day" name="day" required>
+                                                <option value="">يوم</option>
+                                                <!-- Day options will be generated using JavaScript -->
+                                            </select>
+                                            <select id="month" name="month" required onchange="updateDays()">
+                                                <option value="">شهر</option>
+                                                <!-- Month options will be generated using JavaScript -->
+                                            </select>
+                                            <select id="year" name="year" required onchange="updateDays()">
+                                                <option value="">سنة</option>
+                                                <!-- Year options will be generated using JavaScript -->
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button class="submit-button" type="submit">ارسال</button>
+                                    </td>
+                                </tr>
+                            </table>
                         </form>
                     </div>
 
-
+                  </div>
                 </div>
+
             </div>
                 <div class="footer-text">
                     <span dir="rtl">هذا المنتج غير خالٍ من الضرر و يحتوى على النيكوتين،</span><br>
