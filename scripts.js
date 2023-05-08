@@ -19,7 +19,7 @@ $(document).ready(function () {
     });
 
 $('#yesBtn').on('click', function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 
 
         // Initialize intl-tel-input if it has not been initialized yet
