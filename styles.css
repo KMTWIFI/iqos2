@@ -168,6 +168,12 @@ video {
     min-width: 70px;
 }
 
+@media (max-width: 767px) {
+    .question-buttons {
+        flex-direction: column;
+    }
+}
+
 .question {
     direction: rtl;
 }
@@ -349,9 +355,6 @@ form table td:nth-child(odd) {
   .modal-content {
     width: 80%;
   }
-    #yesBtn, #noBtn{
-        max-width: 100px !important;
-    }
 }
 
 /* Tablet */
