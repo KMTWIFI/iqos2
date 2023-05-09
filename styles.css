@@ -166,6 +166,7 @@ video {
     gap: 20px;
     /*width: 70px;
     min-width: 70px;*/
+    align-items: center;
 }
 
 @media (max-width: 767px) {
