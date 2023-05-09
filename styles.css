@@ -164,8 +164,8 @@ video {
     display: flex;
     justify-content: center;
     gap: 20px;
-    /*width: 70px;*/
-    min-width: 70px;
+    /*width: 70px;
+    min-width: 70px;*/
 }
 
 @media (max-width: 767px) {
