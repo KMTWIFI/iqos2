@@ -181,6 +181,13 @@ video {
     direction: rtl;
 }
 
+@media (max-width: 400px) {
+    .question {
+    font-size: 16px;
+}
+}
+
+
 @media (max-width: 767px) {
     button {
         min-width: 80px; /* Adjust the width for mobile devices */
