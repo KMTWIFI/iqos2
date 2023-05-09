@@ -215,6 +215,11 @@ input[type="text"], input[type="tel"], select {
     border: 1px solid #ccc;
 }
 
+
+.iti__flag-container, input[type="tel"] {
+    direction:ltr;
+}
+
 select {
   padding: 5px;
   margin-bottom: 10px;
