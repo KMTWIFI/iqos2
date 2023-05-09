@@ -131,18 +131,20 @@ html, body {
 .video-container {
     width: 100%;
     max-width: 700px;
-    padding-top: 133px;
+    padding-top: 111px;
 }
 
 }
 @media (min-width: 768px) {
     .video-container {
         max-width: 500px;
+        padding-top: 133px;
     }
 }
 @media (min-width: 1024px) {
     .video-container {
         max-width: 500px;
+        padding-top: 139px;
     }
 }
 
