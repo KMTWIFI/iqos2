@@ -130,12 +130,10 @@ html, body {
 
 .video-container {
     width: 100%;
-    max-width: 700px;
     padding-top: 111px;
 }
 
-}
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .video-container {
         max-width: 500px;
         padding-top: 133px;
@@ -150,7 +148,6 @@ html, body {
 
 video {
     width: 100%;
-    max-width: 700px;
     height: auto;
 }
 
@@ -171,28 +168,23 @@ video {
     align-items: center;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .question-buttons {
         flex-direction: column;
     }
-}
+}*/
 
 .question {
     direction: rtl;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .question {
     font-size: 16px;
+    text-align: center;
 }
 }
 
-
-@media (max-width: 767px) {
-    button {
-        min-width: 80px; /* Adjust the width for mobile devices */
-    }
-}
 
 .form-container {
     display: flex;
@@ -263,6 +255,12 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+@media (max-width: 767px) {
+    button {
+        min-width: 100px; /* Adjust the width for mobile devices */
+    }
+}
+
 button:hover {
     background-color: black;
     color: white;
@@ -318,7 +316,7 @@ form table td:nth-child(odd) {
 }
 @media (min-width: 768px) {
     .footer-text {
-        font-size: 19px;
+        font-size: 16px;
     }
 
 }
