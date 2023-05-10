@@ -50,18 +50,30 @@ $('#yesBtn').on('click', function () {
     $('form').on('submit', function (event) {
         event.preventDefault();
 
-        // Validate the name field
-        const name = $('#name').val().trim();
-        if (name.length < 3) {
-            alert('Name should be at least 3 characters');
-            return;
-        }
+    // Validate the name field
+    const name = $('#name').val().trim();
+    if (name.length < 3) {
+        alert('Name should be at least 3 characters');
+        return;
+    }
 
-        // Validate the phone field
-        if (!iti.isValidNumber()) {
-            alert('Please enter a valid phone number');
-            return;
-        }
+    // Validate the phone field
+    if (!iti.isValidNumber()) {
+        alert('Please enter a valid phone number');
+        return;
+    }
+
+    // Validate the date field
+    const day = parseInt($('#day').val(), 10);
+    const month = parseInt($('#month').val(), 10);
+    const year = parseInt($('#year').val(), 10);
+    const dob = new Date(year, month - 1, day); // month is 0-indexed
+    const today = new Date();
+    const eighteenYearsAgo = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+    if (dob > eighteenYearsAgo) {
+        alert('You must be at least 18 years old');
+        return;
+    }
 
         // Perform any additional data processing here
         const phoneNumber = iti.getNumber();
